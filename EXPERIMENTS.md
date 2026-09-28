@@ -3,11 +3,16 @@
 Five instruments in this repository. Each one uses something a repository can
 do that a notebook cannot.
 
-## dreams/ — Dunne's method, dated by git
+## dreams/ — dated entries in three arms
 
-Write the dream down before the day interferes, and let the commit timestamp
-carry the date. Or seal it: commit a fingerprint now, publish the text later,
-and the match proves the text is unchanged. See `dreams/README.md`.
+Write the entry before the day interferes, and let the commit timestamp carry
+the date. Or seal it: commit a fingerprint now, publish the text later, and the
+match proves the text is unchanged.
+
+Entries run in three arms — human, model and null — under random ids, with the
+arm kept out of the repository until scoring is done. Matches are recorded in
+`scoring/` as pairings rather than entries, since one entry may meet several
+events. See `dreams/README.md` and `scoring/README.md`.
 
 ## entropy.log — the arrow of time, as a test that can fail
 
