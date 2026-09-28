@@ -1,0 +1,25 @@
+name: append-only
+
+on:
+  push:
+    paths:
+      - entropy.log
+  pull_request:
+    paths:
+      - entropy.log
+
+jobs:
+  arrow-of-time:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Check that entropy.log was only appended to
+        run: |
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            git show HEAD^:entropy.log > /tmp/old-entropy.log 2>/dev/null || : > /tmp/old-entropy.log
+          else
+            : > /tmp/old-entropy.log
+          fi
+          python3 tools/check_append_only.py entropy.log /tmp/old-entropy.log

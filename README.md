@@ -29,3 +29,9 @@ What began as questions on X has evolved into a multi-platform practice of livin
 - `/thermodynamics/` — Questions, replies, and reflections on entropy, isolated systems, and the arrow of time
 - `/synchronicities/` — Catalog of observed alignments with analysis
 - `/narratives/` — Poetic fragments, shapeshifter tales
+
+## Experiments
+
+Five instruments live in this repository — dated dreams, an append-only
+entropy log, the Binary Loom, a synchronicity register, and the 11:11
+count. See [EXPERIMENTS.md](EXPERIMENTS.md).

@@ -1,0 +1,3 @@
+# entropy.log — append only. Earlier lines are never edited or removed.
+# The workflow in .github/workflows/append-only.yml fails any commit that tries.
+2026-09-27  the log begins

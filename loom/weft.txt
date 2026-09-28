@@ -1,0 +1,5 @@
+# The Binary Loom — one row per commit. Glyphs separated by spaces.
+# 上 下 hõt cōl à 出 米 𝄐   ·   a blank row is a rest
+米 à 出 上
+hõt 出 上 cōl
+下 米 à 𝄐
